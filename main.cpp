@@ -653,7 +653,7 @@ int main (){
     Bob.copyHand(cardB); 
     int finalAns=search(cardA,cardB,emptyArr,1);
     printf("=====================\n");
-    printf("%d\n",finalAns); 
+    printf((finalAns==1?"You Win\n":"You Loss\n")); 
     int fanSiz=0; 
     rep(i,3,17){fanSiz+=fans[i]; printf("%d:%d  ",i,fans[i]);}
     if(!fanSiz) printf("Skip!");
@@ -671,7 +671,8 @@ int main (){
         finalAns=search(cardA,cardB,emptyArr,1); 
         printf("=====================\n");
 
-        printf("%d\n",finalAns); fanSiz=0; 
+        printf((finalAns==1?"You Win\n":"You Loss\n")); 
+        fanSiz=0; 
         rep(i,3,17){fanSiz+=fans[i]; printf("%d:%d  ",i,fans[i]);}
         if(!fanSiz) printf("Skip!");
         printf("\n");
