@@ -30,3 +30,4 @@ single pair triplet triplet-single triplet-pair sequence sequence-pair sequence-
 # Future Work
 1. 从两人明牌到三人明牌 （创新性太小）
 2. 从两人明牌到三人暗牌 （难度太大，目前思路可能要上AI？）
+ 
